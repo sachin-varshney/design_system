@@ -1,12 +1,16 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-dehaat_design_system';
+import {AppButton} from 'react-native-dehaat_design_system';
+import React from 'react';
 
-const result = multiply(3, 7);
 
 export default function App() {
+  const [result, setResult] = React.useState<number>(0);
+
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <AppButton onPress={() => setResult((i) => ++i)}>Multiply</AppButton>
+
     </View>
   );
 }
