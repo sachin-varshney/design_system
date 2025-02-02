@@ -1,7 +1,6 @@
 {
   "name": "react-native-dehaat_design_system",
-  "private": true,
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "This is a ui library used for creating and reusing the components",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
